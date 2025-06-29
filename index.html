@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio de Mariana</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 56px;
+      background-color: #f3e5f5; /* lilás clarinho */
+      font-size: 22px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4a4a4a; /* cinza escuro para melhor leitura */
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #4a4a4a;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #4a4a4a;
+    }
+
+    /* Título hobbies cinza escuro */
+    .h2-hobbies {
+      font-size: 1.5em;
+      color: #4a4a4a;
+    }
+
+    /* Botões dos hobbies com fonte menor e cor cinza escuro */
+    .accordion-button.hobby-title {
+      font-size: 0.85em; /* diminui o tamanho das letras */
+      color: #4a4a4a;
+      background-color: #e1bee7; /* lilás claro padrão */
+      transition: background-color 0.3s ease;
+    }
+
+    /* Cor lilás no hover */
+    .accordion-button.hobby-title:hover {
+      background-color: #d1b3e0;
+    }
+
+    /* Quando os botões estão colapsados, mesma cor cinza */
+    .accordion-button.hobby-title.collapsed {
+      color: #4a4a4a;
+      background-color: #e1bee7;
+    }
+
+    /* Fundo lilás quando ativo, focado ou aberto */
+    .accordion-button.hobby-title:focus,
+    .accordion-button.hobby-title.active,
+    .accordion-button.hobby-title[aria-expanded="true"] {
+      background-color: #ba68c8 !important; /* lilás mais forte */
+      color: #fff; /* texto branco para contraste */
+      box-shadow: none; /* remove sombra padrão do foco */
+    }
+
+    h3 {
+      font-size: 1.7em;
+      color: #4a4a4a;
+    }
+
+    header {
+      background-color: #ce93d8; /* lilás médio */
+      color: #4a4a4a;
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #4a4a4a;
+      margin-bottom: 15px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    footer {
+      background-color: #e1bee7;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      color: #4a4a4a;
+    }
+
+    .accordion-body {
+      font-size: 1.2em;
+      color: #4a4a4a;
+    }
+
+    .navbar {
+      background-color: #ba68c8;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #4a4a4a;
+    }
+
+    .accordion-item {
+      background-color: #f8eafc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mariana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#identificacao">Identificação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formacao">Formação Acadêmica</a></li>
+        <li class="nav-item"><a class="nav-link" href="#atuacao">Atuação Profissional</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cabeçalho -->
+<header>
+  <img src="mariana.jpg" alt="Foto de Mariana" />
+  <h1>Mariana de Sousa Silva Cordeiro</h1>
+  <p class="lead">Bem-vindo!</p>
+</header>
+
+<!-- Identificação -->
+<section id="identificacao" class="bg-light">
+  <div class="container">
+    <h2 class="text-center">Identificação</h2>
+    <p><strong>Nome:</strong> Mariana de Sousa Silva Cordeiro</p>
+    <p><strong>Data de Nascimento:</strong> 02 de Março de 2004</p>
+    <p><strong>Cidade:</strong> Brasília - DF</p>
+  </div>
+</section>
+
+<!-- Formação Acadêmica -->
+<section id="formacao">
+  <div class="container">
+    <h2 class="text-center">Formação Acadêmica</h2>
+    <ul>
+      <li>Ensino Médio Completo - Centro de Ensino Médio 02 de Sobradinho</li>
+      <li>Cursando Gestão da Tecnologia da Informação - Faculdade Projeção (Campus Sobradinho)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Atuação Profissional -->
+<section id="atuacao" class="bg-light">
+  <div class="container">
+    <h2 class="text-center">Atuação Profissional</h2>
+    <p>Sem experiências profissionais.</p>
+  </div>
+</section>
+
+<!-- Expectativa Profissional -->
+<section>
+  <div class="container">
+    <h2 class="text-center">Expectativa Profissional</h2>
+    <p>Conseguir um bom emprego, com um salário que dê para superar todas as minhas expectativas.</p>
+  </div>
+</section>
+
+<!-- Hobbies -->
+<section id="hobbies">
+  <div class="container">
+    <h2 class="text-center h2-hobbies">Hobbies</h2>
+    <div class="accordion" id="accordionHobbies">
+
+      <!-- Caminhar -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button hobby-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            Caminhar
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionHobbies">
+          <div class="accordion-body">
+            Caminhar me ajuda a sair do comodismo.
+          </div>
+        </div>
+      </div>
+
+      <!-- Escutar música -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button hobby-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            Escutar música
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionHobbies">
+          <div class="accordion-body">
+            Amo ouvir músicas!
+          </div>
+        </div>
+      </div>
+
+      <!-- Pintar -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button hobby-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            Pintar
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionHobbies">
+          <div class="accordion-body">
+            Pintar é uma forma de me tirar do tédio.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+  <p> Mariana de Sousa Silva Cordeiro</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
